@@ -3,13 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign up form</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <p id="test" class="p">
-        test
-    </p>
+    <div class="form-container" id="sing-up">
+        <div class="form-img" id="img">
+            <img src="./img/mourad-saadi-WA-Rp7WmZtQ-unsplash.jpg" alt="Background Image" class="bg-img">
+            <span class="logo">ODIN</span>
+        </div>
+    </div>
+
+    <div class = "form-content" id="form-content">
+        <div class="form-msg">
+            <p class="caption">
+                REND! SLAUGHTER! DEVOUR YOUR ENEMIES! There is no other way to survive. You can't escape your hunger, warriors of purgatory! 
+                <br>Join us! <span>Now!</span>
+            </p>
+        </div>
+
+        <div class="form-wrap" id="form-wrap">
+            <form action="example.com" method="post" class="sign-up-form">
+                <div class="form-row">
+                    <label for="Fname">First Name</label>
+                    <input type="text" id="Fname" name="Fname" placeholder="Enter your first name" required>
+                    <span class="error-msg" id="Fname-error"></span>
+                </div>
+
+            <div class="form-row">
+                <label for="Lname">Last Name</label>
+                <input type="text" id="Lname" name="Lname" placeholder="Enter your last name" required>
+                <span class="error-msg" id="Lname-error"></span>
+            </div>
+
+            <div class="form-row">
+                <label for="phone">Phone Number</label>
+                <input type"tel" id="phone" name="phone" required>
+                <span class="error-msg" id="phone-error"></span>
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error-msg" id="password-error"></span>
+            </div>
+
+            <div class="footer">
+                <button type="submit" class="form-btn">Create Account</button>
+                <p class="caption">Already have an account? <a href="#" class="login-link">Log in</a></p>
+            </div>
+            </form>
+
+        </div>
+
+    </div>
     <script src="form.js"> </script>
 </body>
 </html>
